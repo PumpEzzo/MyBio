@@ -1,0 +1,483 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 13px;
+}
+
+.nav a {
+    color: black;
+    width: 20%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav div {
+    justify-content: space-between;
+}
+
+
+ 
+.nav .active {
+    background-color: #346abb;
+    color: white;
+}
+
+.nav a:hover {
+    background-color: #346abb;
+    color: white;
+    transition: 0.5s;
+    
+}
+
+@media (max-width: 1080px) {
+    .nav a {
+        font-size: 12px;
+    }
+    .nav img {
+        width: 6%;
+    }
+}
+@media (max-width: 790px) {
+    .nav a {
+        padding-top: 2%;
+    padding-bottom: 2%;
+        font-size: 9px;
+    }
+}
+@media (max-width: 600px) {
+    .nav a {
+        padding-top: 2%;
+    padding-bottom: 2%;
+        font-size: 8px;
+    }
+}
+
+.row {
+    display: flex;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+@media (max-width: 1060px) {
+    .row{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .row{
+        display:block;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+.sidebar {
+    flex: 30%;
+    align-self: baseline;
+    padding: 0;
+    margin: 20px;
+    background-color: white;
+}
+
+.sidebar .personal-info {
+	display: inline-block;
+    width: 90%;
+    list-style: none;
+    padding-left: 7%;
+    padding-right: 7%;
+    border-bottom: 1px solid #e6e6e6;
+}
+.sidebar .personal-info li {
+	width: 100%;
+    float: left;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.sidebar .personal-info li span {
+	width: 40%;
+	float: left;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+@media (max-width: 1280px) {
+    .sidebar .personal-info li span {
+        width: 35%;
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .sidebar .personal-info li p{
+        font-size: 13px;
+    }
+}
+
+.main-content {
+    flex: 70%;
+    align-self: baseline;
+    margin: 20px;
+    background-color: white;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+     background-color: white;
+     margin: 0;
+     padding: 0;
+}
+
+.content {
+    background-color: #f5f5f5;
+}
+ 
+h5.title {
+    font-size: 18px;
+    padding: 20px;
+    margin: 0px;
+    color: #333333;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+h6.title {
+    font-size: 14px;
+    margin: 0px;
+    color: #333333;
+    letter-spacing: 1px;
+}
+
+.btn-social {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7px;
+    background-color: white;
+    border-bottom: 1px solid #e6e6e6;
+
+}
+
+.btn-social a{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .btn-social a{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .btn-social a{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .btn-social a{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn-social a{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.fa {
+    border: 1px solid #e6e6e6;
+    background-color: white;
+}
+  
+.fa:hover {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.btn-social a img {
+    max-width: 60%;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.contact-me {
+    display: flex;
+    padding: 5px;
+}
+
+.about-me .personal-info {
+	padding: 25px;
+	display: inline-block;
+    width: 100%;
+    list-style: none;
+}
+.about-me .personal-info li {
+	width: 50%;
+    float: left;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.about-me .personal-info li span {
+	width: 50%;
+	float: left;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.about-me .personal-info li p {
+	margin: 0px;
+	line-height: 30px;
+}
+
+.my-info {
+    padding: 5%;
+    padding-top: 2%;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.my-info q {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1280px) {
+    .about-me .personal-info li span {
+        width: 35%;
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .my-info q {
+        font-size: 16px;
+    }
+}
+@media (max-width: 969px) {
+    .about-me .personal-info li span {
+        width: 35%;
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .about-me .personal-info li p{
+        font-size: 13px;
+    }
+    .my-info q {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-me .personal-info li {
+        width: 100%;
+        float: left;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .my-info {
+        font-size: 10px;
+    }
+    .my-info q {
+        font-size: 14px;
+    }
+}
+
+.academic-part {
+    width: 100%;
+}
+
+.academic .academic-part .academic-left span {
+    padding: 3%;
+    padding-left: 5%;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.academic .academic-part .academic-right p {
+    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+}
+
+.academic-part .academic-left{
+    width: 25%;
+    vertical-align: top;
+}
+
+.academic-part .academic-left, .academic-right {
+    display: table-cell;
+    vertical-align: top;
+    padding: 3%;
+}
+
+.academic-part .academic-right {
+    position: relative;
+    padding: 3%;
+}
+
+@media (max-width: 1280px) {
+    .academic .academic-part .academic-left span {
+        font-size: 13px;
+    }
+
+    .academic .academic-part .academic-right p {
+        font-size: 13px;
+    }
+
+    h6.title {
+        font-size: 13px;
+        margin: 0px;
+        color: #333333;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 900px) {
+    .academic .academic-part .academic-left span {
+        font-size: 10px;
+    }
+
+    .academic .academic-part .academic-right p {
+        font-size: 10px;
+    }
+
+    .academic-part .academic-left{
+        width: 30%;
+    }
+    h6.title {
+        font-size: 11px;
+        margin: 0px;
+        color: #333333;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 588px) {
+    .academic .academic-part .academic-left span {
+        font-size: 10px;
+    }
+
+    .academic .academic-part .academic-right p {
+        font-size: 10px;
+    }
+
+    .academic-part .academic-left{
+        width: 35%;
+    }
+    h6.title {
+        font-size: 11px;
+        margin: 0px;
+        color: #333333;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 500px) {
+    .academic .academic-part .academic-left span {
+        font-size: 9px;
+    }
+
+    .academic .academic-part .academic-right p {
+        font-size: 9px;
+    }
+
+    .academic-part .academic-left{
+        width: 35%;
+    }
+    h6.title {
+        font-size: 11px;
+        margin: 0px;
+        color: #333333;
+        letter-spacing: 1px;
+    }
+}
+
+.portfolio-main {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.portfolio-main img {
+    padding: 0 20px 20px;
+    width: 216px;
+    height: 196px;
+}
+
+.contact {
+    display: flex;
+    padding: 5%;
+}
+
+.contact .phone, .location, .mail {
+    width: 33.33%;
+    text-align: center;
+}
+
+.contact img {
+    width: 15%;
+}
+
+.google-map {
+    padding-bottom: 10%;
+}
+
+@media (max-width: 1280px) {
+    .google-map iframe {
+        height: 350px;
+    }
+}
+@media (max-width: 720px) {
+    .google-map iframe {
+        height: 250px;
+    }
+}
+@media (max-width: 400px) {
+    .google-map iframe {
+        height: 230px;
+    }
+}
+
+@media (max-width: 720px) {
+    .contact img {
+        width: 13%;
+    }
+    .contact .phone, .location, .mail {
+        font-size: 10px;
+    }
+    
+}
+
+.footer {
+    width: 100%;
+    background-color: #333333;
+}
+  
